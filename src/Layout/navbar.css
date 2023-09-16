@@ -1,0 +1,23 @@
+.nav-container {
+  background-color: var(--elements-bg-color);
+  box-shadow: 0 2px 4px 0 var(--shadow-color);
+}
+nav {
+  max-width: var(--max-width);
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-inline: var(--h-padding);
+  height: 5rem;
+  line-height: 1;
+  text-align: left;
+}
+button#toggleTheme {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  color: unset;
+  font-size: unset;
+  font-weight: var(--bold);
+}

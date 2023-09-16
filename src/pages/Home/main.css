@@ -1,0 +1,19 @@
+main {
+  padding-inline: var(--h-padding);
+}
+.container {
+  max-width: var(--max-width);
+  padding-block-end: var(--h-padding);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(var(--width), auto));
+  gap: var(--gap);
+  margin: auto;
+  place-items: center;
+  place-content: space-between;
+}
+
+@media (max-width: 1062px) {
+  .container {
+    place-content: center;
+  }
+}

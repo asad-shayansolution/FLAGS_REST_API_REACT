@@ -1,0 +1,47 @@
+a.card {
+  height: 390px;
+  background-color: var(--elements-bg-color);
+  border-radius: 0.5rem;
+  overflow: hidden;
+  max-width: var(--width);
+  box-shadow: 0 0 1rem 0 var(--shadow-color);
+}
+.card img {
+  width: var(--width);
+  height: 48%;
+  box-sizing: border-box;
+  border-bottom: thin solid var(--shadow-color);
+}
+.card:hover {
+  scale: 1.02;
+}
+.textSection {
+  padding: 0 1rem 1.5rem;
+}
+.textSection h4 {
+  margin-block: 0.5rem;
+}
+.textSection span {
+  font-weight: initial;
+}
+
+@media (max-width: 350px) {
+  :root {
+    --h-padding: 1rem;
+    --width: 100%;
+  }
+  a.card {
+    height: auto;
+  }
+  .textSection {
+    padding: 0.5rem;
+  }
+  .textSection * {
+    margin: 0;
+  }
+  .search,
+  .filter {
+    gap: var(--h-padding);
+    padding-inline: var(--h-padding);
+  }
+}

@@ -1,0 +1,15 @@
+:root {
+  --size: 0.9em;
+  --radius: 4px;
+}
+#back-btn {
+  border: none;
+  font-size: var(--size);
+  padding: 0.5rem 2rem;
+  margin-block: 1rem;
+  border-radius: var(--radius);
+  background-color: var(--elements-bg-color);
+  color: var(--color);
+  box-shadow: 0 0 8px 0 var(--shadow-color);
+  cursor: pointer;
+}

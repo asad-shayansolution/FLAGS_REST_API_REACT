@@ -1,0 +1,46 @@
+header section {
+  box-shadow: 0 0 8px 0px var(--shadow-color);
+  padding: 1rem;
+  border-radius: 4px;
+  background-color: var(--elements-bg-color);
+  box-sizing: border-box;
+}
+.search > input,
+.filter > select,
+.filter > select > option {
+  width: 100%;
+  font-size: unset;
+  border: none;
+  outline: none;
+  color: unset;
+  background-color: var(--elements-bg-color);
+}
+.search {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  width: 28em;
+  padding-inline: 2rem;
+}
+.search input::placeholder,
+.search i {
+  color: var(--color);
+}
+.filter {
+  width: 12em;
+}
+
+@media (max-width: 724px) {
+  :root {
+    --h-padding: 2rem;
+    --gap: 1rem;
+  }
+  header {
+    flex-direction: column;
+  }
+  .search,
+  .filter {
+    width: 100%;
+  }
+}
